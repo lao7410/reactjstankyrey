@@ -42,14 +42,13 @@ const App = () => {
   const onHandlerAddProduct = () => {
     console.log('add product')
   }
-  
+
   return (
     <div className="App">
       <header className="App-header">
-        <div>
+        
           <NavBar />
-        </div>
-
+        
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello World!
