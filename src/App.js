@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './components/NavBar.js';
+
 
 const products = [
   {
@@ -24,25 +27,14 @@ const products = [
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Do-eg663j3L9FuvvV8--uvnknGCUVoBE1tmLLOnST65uTF4Z_StK7dTZ2pXe0wLLReY&usqp=CAU'
   },
 ]
-/* class ButtonClass extends React.Component{
-  constructor (props){
-    super(props)
-  }
-  render(){
-    return(
-      zbutton onclick
-    )
-  }
-} */
+const Button = (props) => {
 
- const Button = (props) => {
-  
   return (
     <button onClick={props.onClick} className='button-primary'>{props.text}</button>
   )
-} 
+}
 
-function App() {
+const App = () => {
   const onHandleClick = () => {
     console.log('was clicked')
   }
@@ -50,9 +42,14 @@ function App() {
   const onHandlerAddProduct = () => {
     console.log('add product')
   }
+  
   return (
     <div className="App">
       <header className="App-header">
+        <div>
+          <NavBar />
+        </div>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello World!
