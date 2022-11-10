@@ -1,4 +1,134 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  --primary-color: CAD2C5;
+  --secondary-color: #84A98C;
+  --text-primary: '#2F3E46';
+  --text-secondary: #FFFFFF;
+  --bg-primary: #CAD2C5;
+  --bg-secondary: #354F52;
+  --transition-speed: 200ms;
+  padding: 3px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--bg-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  line-height: 2rem;
+  max-width: 100%;
+}
+
+
+main>p {
+  text-align: justify;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: var(--bg-secondary);
+  transition: height 200ms ease;
+}
+
+.navbar-bar {
+  list-style: none;
+  padding: 0 1.6rem;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-item:last-child {
+  margin-top: auto;
+}
+
+.link-text {
+  /* display: none; */
+  margin-left: 1rem;
+}
+
+.nav-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.nav-link i {
+  min-width: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  transition: var(--transition-speed);
+}
+
+
+.navbar:hover {
+  height: 15rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+  color: var(--text-secondary);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 80%;
+}
+
+.logo i {
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+}
+
+/* .navbar:hover .logo i {
+  transform: rotate(-180deg)
+} */
+
+/* .App {
   text-align: center;
 }
 
@@ -14,7 +144,7 @@
 }
 
 /* NAVBAR */
-.nav-link {
+/* .nav-link {
   background-color: #282c34;
   color: #9EADC8;
   font-size: 25px;
@@ -81,4 +211,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}  */
