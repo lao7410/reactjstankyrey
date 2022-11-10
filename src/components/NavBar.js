@@ -10,35 +10,37 @@ const NavBar = () => {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="/" className="nav-link">
                         <i className="fa-solid fa-house" />
                         <span className="link-text">Home</span>
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="/Nosotros" className="nav-link">
                         <i className="fa-solid fa-building" />
                         <span className="link-text">Nosotros</span>
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="/Servicios" className="nav-link">
                         <i className="fa-solid fa-cloud" />
                         <span className="link-text">Servicios</span>
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
+                    <a href="/Contacto" className="nav-link">
                         <i className="fa-solid fa-address-book" />
                         <span className="link-text">Contacto</span>
                     </a>
                 </li>
+                
                 <li className="nav-item">
-                    <a href="#" className="nav-link">
-                        <i className="fa-solid fa-cloud-sun" />
-                        <span className="link-text">Tienda</span>
+                    <a href="/tienda" className="nav-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                        
                     </a>
                 </li>
+                
             </ul>
         </div>
     );
