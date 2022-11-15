@@ -5,7 +5,7 @@ const NavBar = () => {
         <div className="navbar">
             <ul className="navbar-bar">
                 <li className="logo">
-                    <a href="#" className="nav-link">
+                    <a href="/" className="nav-link">
                         <span className="link-text logo-text">TANKY SOLUCIONES</span>
                     </a>
                 </li>
@@ -37,6 +37,7 @@ const NavBar = () => {
                 <li className="nav-item">
                     <a href="/tienda" className="nav-link">
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <span className="link-text">Tienda</span>
                         
                     </a>
                 </li>

@@ -6,7 +6,7 @@ const Tarjeta = ({ item }) => {
     const { id, nombre, image, type} = item;
     const navigate = useNavigate ();
     const handleDetail = () => {
-        navigate ('/detalle/${id}');
+        navigate ('./Detalle/${id}');
     }
     return (
         <div onClick={handleDetail} className="card">
