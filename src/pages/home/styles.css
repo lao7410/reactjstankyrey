@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    flex-direction: row;
+
+
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+button{
+background: whitesmoke ;
+border: 1px solid black;
+padding: 10px;
+font-weight: bold;
+font-size: 14px;
+cursor: pointer;
+color: grey;
+margin: 10px;
+
+}
+
+button.hover{
+    background-color: antiquewhite;
+    color: aliceblue;
+}
+
+button:disabled{
+    background-color: grey;
+    color: #fff;
+    cursor: not-allowed;
+    
+}
